@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://polaros.xyz/css/style.css">
+    <link rel="icon" type="image/png" href=""/>
+    <script src="https://kit.fontawesome.com/4553d7ab49.js" crossorigin="anonymous"></script>
+    <title>Page doesn't exist</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content white about" style="padding-top: 60px;">
+            <h2 style="margin-bottom: 30px;">Oops. Got lost?</h2>
+            <p style="margin-bottom: 40px;">Looks like the page you are trying to access doesn't exist. Wanna go back to the homepage?</p>
+            <a href="https://polaros.xyz">Back home</a><br>
+        </div>
+    </div>
+</body>
+<style>
+    a {
+        text-decoration: none;
+        background-color: #6D6D6D;
+        padding: 15px 35px;
+        color: #555555;
+        border-radius: 50px;
+        border-radius: 50px;
+        background: #f1f1f1;
+        box-shadow:  12px 12px 24px #d9d9d9,
+                    -12px -12px 24px #ffffff;
+        font-size: 1.1em;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+
+    a:hover {
+        background: linear-gradient(145deg, #d9d9d9, #ffffff);
+        box-shadow:  12px 12px 22px #d9d9d9,
+                    -12px -12px 22px #ffffff;
+    }
+</style>
+<script src="./scripts/loader.js"></script>
+<script>
+    if(userPrefersDark){
+        link.href = './img/logo-light.png';
+    } else if(userPrefersLight) {
+        link.href = './img/logo-dark.png';
+    }
+
+    ScrollReveal().reveal('.wrapper');
+</script>
+<script src="./darkMode.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5Z4YHX5K0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T5Z4YHX5K0');
+</script>
+
+</html>

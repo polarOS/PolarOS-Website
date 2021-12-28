@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head.ejs') %>
+    </head>
+    <body>
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+            <div></div><div></div><div></div><div></div></div>
+        </div>
+        <div class="container">
+            <header>
+                <%- include('./partials/nav.ejs') %>
+            </header>
+
+            <%- include('./partials/dark.ejs') %>
+            
+            <div class="content white about sys-req">
+                <h2>Minimum system requirements</h2>
+                <p><span>CPU: </span>Intel Core i3</p>
+                <p><span>RAM: </span>4GB</p>
+                <p><span>GPU memory: </span>128MB</p>
+                <p><span>Storage: </span>20GB</p>
+                <p><span>3D hardware acceleration: </span>yes</p>
+                <p><span>USB Storage: </span>4GB</p>
+            </div>
+        </div>
+        <script src="../scripts/script.js"></script>
+        <%- include('./partials/footer.ejs') %>
+        
+</html>

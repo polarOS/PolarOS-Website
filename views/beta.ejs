@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PolarOS Beta</title>
+        <link rel="icon" href="/img/logo-light">
+        <link rel="stylesheet" href="/css/beta.css">
+    </head>
+    <body>
+        <header>
+            <a href="/"><img src="/img/logo-light.png" alt="PolarOS Logo" width="40px" height="40px"></a>
+            <a href="https://id.polaros.xyz">Log in</a>
+        </header>
+        <h1>Wanna try PolarOS before everyone else?</h1>
+        <p>Download developer builds today.</p>
+        <a href="https://dl.dropboxusercontent.com/s/7o8oi7glmts03dh/polarOS1011.iso?dl=0" class="beta">Download latest.</a>
+    </body>
+    <script>
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const userPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        const link = document.querySelector("link[rel~='icon']");
+        const logo = document.querySelector("img");
+
+        if(userPrefersDark){
+            link.href = '../img/logo-light.png';
+            logo.src = '../img/logo-light.png';
+        } else if(userPrefersLight) {
+            link.href = '../img/logo-dark.png';
+            logo.src = '../img/logo-dark.png';
+        }
+    </script>
+    
+</html>

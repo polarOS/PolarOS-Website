@@ -1,0 +1,42 @@
+<div class="dark-mode" id="theme-switch">
+	<label for="checkbox" id="theme-switch">
+		<input type="checkbox" id="theme-switch" />
+		<i class="fas fa-moon" id="theme-switch-ico"></i>
+	</label>
+</div>
+
+<style>
+	#theme-switch-ico {
+		transition: transform 0.7s;
+	}
+	.flip {
+		transform: rotate(-360deg) !important;
+	}
+</style>
+
+<script>
+	$(document).ready(() => {
+		if (Cookies.get("data-theme")) {
+			$("body").attr("data-theme", Cookies.get("data-theme"));
+			if (Cookies.get("data-theme") == "dark") {
+				$("#theme-switch-ico").toggleClass("flip");
+				$("#theme-switch-ico").toggleClass("fa-sun");
+				$("#theme-switch-ico").toggleClass("fa-moon");
+			}
+		}
+
+		$("#theme-switch").on("click", () => {
+			$("#theme-switch-ico").toggleClass("flip");
+			$("#theme-switch-ico").toggleClass("fa-sun");
+			$("#theme-switch-ico").toggleClass("fa-moon");
+
+			if ($("body").attr("data-theme") == "dark") {
+				$("body").attr("data-theme", "light");
+				Cookies.set("data-theme", "light");
+			} else {
+				$("body").attr("data-theme", "dark");
+				Cookies.set("data-theme", "dark");
+			}
+		});
+	});
+</script>

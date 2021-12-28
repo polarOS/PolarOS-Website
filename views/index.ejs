@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head.ejs') %>
+    </head>
+    <body>
+        <div class="loader-wrapper">
+            <div class="loader"></div><div></div><div></div><div></div><div></div></div>
+        </div>
+        <div class="container">
+            <%- include('./partials/preload.ejs') %>
+            <header>
+                <%- include('./partials/nav.ejs') %>
+            </header>
+
+            <%- include('./partials/dark.ejs') %>
+
+            <div class="content">
+                <div class="hero" id="top">
+                    <div class="heading">
+                        <h1>PolarOS</h1>
+                    </div>
+                    <h3>Happy new year, new polarOS.</h3>
+                  <h3><a style="color: #08c; cursor: not-allowed;" href="" class="updates"><strong>PolarReports is coming.</strong></a></h3>
+                    <img src="./img/polaros.png" alt="PolarOS screenshot">
+                    <div class="arrow">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <div class="wrapper centered-header">
+                        <h2>Make your computer <span>better</span>.</h2>
+                        <div class="inner-content">
+                            <p>We use the latest technology to mix safety with speed and design. This is polarOS. To make your super-fast computer even better or to bless your incredibly old notebook. We make it possible for people who use a mainstream operating system on a daily basis to use today's Linux. With a unique look and feel but everyday functionality. You no longer need a terminal because here at our office we carry out our idea to perfection. This is for the youngsters who like to learn about computers or for the grandpa to enjoy the computer. Everyone can use this. Stop learning about linux kernels and commands because everything here speaks for itself. Unlimited computing at your fingertips.</p>
+                            <img src="./img/better-computer.png" alt="PolarOS screenshot" width="600px" height="600px">
+                        </div>
+                    </div>
+
+                    <div class="wrapper right-text">
+                        <h2><span>Refocus</span> your workflow or relax.</h2>
+                        <div class="inner-content">
+                            <p>In recent and coming years, we have been working on making computers smarter without compromising not only our privacy, but also your privacy. We believe that you can do the things you do in hours in half an hour and the things you do in that half hour in fifteen minutes and so on. So we also focus our operating system on the efficiency of working but also gaming on Linux for free. What used to take too long is now too fast to think about and all this without artificial intelligence. With us, nothing will come at the expense of speed, privacy or beauty. We do everything we can to make your day run as smoothly as possible by means of computer techniques designed by us. This includes polarStore and more apps that are in development at this moment of time!</p>
+                            <img src="./img/refocus-your-workflow.png" alt="PolarOS screenshot" width="600px" height="600px">
+                        </div>
+                    </div>
+
+                    <div class="wrapper centered-header centered-text" id="download">
+                        <h2>Your next adventure starts <span>here</span>.</h2>
+                        <div class="inner-content">
+                            <p>Get polarOS for free right now, it will make you as happy as us!</p>
+                            <a href="./versions/" class="download">Download</a>
+                            <a href="./system-requirements/" class="sys-req">See if your PC can run PolarOS</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="questions" id="faq">
+                    <h2>Frequently asked questions</h2>
+                    <div class="questions-wrapper">
+                        <div class="question">
+                            <h4>Is PolarOS opensourced?</h4>
+                            <p>Our foundation is totally open source, based on a solid establishment of free, open source programming (like GNU/Linux). Visit our <a href="https://github.com/polaros">github.</a></p>
+                        </div>
+                        <div class="question">
+                            <h4>What is polarOS based on?</h4>
+                            <p>PolarOS is currently in 2 shapes. KDE and XFCE. The KDE distro of polarOS is based on KDE NEON. The XFCE version of polarOS is based on debian 11.</p>
+                        </div>
+                        <div class="question">
+                            <h4>How do I get help?</h4>
+                            <a href="https://discord.gg/SjCH9rYQWV">Join our Discord server.</a>
+                        </div>
+                        <div class="question">
+                            <h4>Why choose polarOS? </h4>
+                            <p>polarOS is the best way to mix design, speed and security.</p>
+                        </div>
+                        <div class="question">
+                            <h4>Should i replace my OS for polar?</h4>
+                            <p>polarOS is an operating system focusing on privacy, functionality and design. This means we do our very best to create open-source software which will eventually be good enough to use over any operating system in existance without losing any functions or design while gaining performance.</p>
+                        </div>
+                        <div class="question">
+                            <h4>Is there a forum to get help?</h4>
+                            <p>No, we do plan on making one. <a href="https://discord.gg/SjCH9rYQWV">Join our Discord server for help.</a></p>
+                        </div>
+                        <div class="question">
+                            <h4>What about privacy?</h4>
+                            <p>Assuming the source code is accessible for audit, anybody - a security analyst, a concerned client, or any manufacter who furnishes the OS with their equipment - can confirm that the product is secure and doesn't gather any close to home data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/script.js"></script>
+        <%- include('./partials/footer.ejs') %>
+    </body>
+</html>

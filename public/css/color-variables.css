@@ -1,0 +1,77 @@
+:root {
+	--loader-bg: white;
+	--loader-ring: rgb(160, 223, 255);
+	--header: white;
+	--logo: url("/img/logo-dark.png");
+	--h2-desc: #707070;
+	--h2-additional: #707070;
+	--h3: #707070;
+	--sysreq: #a0a0a0;
+	--h5: black;
+	--social: #b8b8b8;
+	--social-hover-p-desc: #858585;
+	--nav-items-sysreq-question-p-a: #8b8a8a;
+	--a-hover: black;
+	--toggle-color: #121212;
+	--toggle-bg: white;
+	--main-version-bg: #ffffff;
+	--main-bg-white: white;
+	--h1: linear-gradient(
+		90deg,
+   rgba(0,255,244,1) 0%, 
+   rgba(69,59,156,1) 31%, 
+   rgba(249,255,0,1) 63%,
+   rgba(255,0,0,1) 100%
+	);
+	--h2-h4-versions-about-footer-hover: #2e2e2e;
+	--h3-versions-about-download-sysreq-hover: #555555;
+	--p-a-versions-about: #6d6d6d;
+	--neuro-shadow: 12px 12px 24px #d9d9d9, -12px -12px 24px #ffffff;
+	--neuro-hover-bg: linear-gradient(145deg, #d9d9d9, #ffffff);
+	--version-hover-shadow: 20px 20px 60px #cdcdcd, -20px -20px 60px #ffffff;
+	--span-h-question: #2e2e2e;
+	--p: #797979;
+	--question: #2e2e2e;
+	--download-bg: f1f1f1;
+	--download-shadow-hover: 12px 12px 22px #d9d9d9, -12px -12px 22px #ffffff;
+	--footer-bg: #dbdbdb;
+	--footer-color: #717171;
+	--footer-hover: black;
+}
+
+[data-theme="dark"] {
+	--loader-bg: #121212;
+	--loader-ring: rgb(121, 210, 255);
+	--header: #1f1f1f;
+	--logo: url("/img/logo-light.png");
+	--bar: #929292;
+	--h2-desc: #929292;
+	--h2-additional: #bdbdbd;
+	--h3: #707070;
+	--sysreq: #a0a0a0;
+	--h5: white;
+	--social: #b8b8b8;
+	--social-hover-p-desc: #d6d6d6;
+	--nav-items-sysreq-question-p-a: #6e6e6e;
+	--a-hover: white;
+	--toggle-color: #e4e4e4;
+	--toggle-bg: rgb(49, 49, 49);
+	--main-version-bg: #121212;
+	--download-bg: #242424;
+	--download-hover-bg: linear-gradient(145deg, #1d1d1d, #272727);
+	--main-bg-white: #1f1f1f;
+	--h1: #ffffff;
+	--h2-h4-versions-about-footer-hover: #2e2e2e;
+	--h3-versions-about-download-sysreq-hover: #929292;
+	--p-a-versions-about: #6d6d6d;
+	--neuro-shadow: 12px 12px 24px #080808, -12px -12px 24px #222222;
+	--neuro-hover-bg: linear-gradient(145deg, #202020, #272727);
+	--version-hover-shadow: 12px 12px 24px #080808, -12px -12px 24px #222222;
+	--span-h-question: #e2e2e2;
+	--question: #b1b1b1;
+	--p: #808080;
+	--download-shadow-hover: 12px 12px 24px #080808, -12px -12px 24px #222222;
+	--footer-bg: #2e2e2e;
+	--footer-color: #8b8b8b;
+	--footer-hover: #dddddd;
+}

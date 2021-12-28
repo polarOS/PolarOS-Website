@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head.ejs') %>
+    </head>
+    <body>
+        <div class="loader-wrapper">
+            <div class="loader"><div></div><div></div><div></div><div></div></div>
+        </div>
+        <div class="container other">
+            <header>
+                <%- include('./partials/nav.ejs') %>
+            </header>
+
+            <%- include('./partials/dark.ejs') %>
+            
+            <div class="content white versions">
+                <h2>Versions</h2>
+                <div class="versions">
+                    <div class="version" onclick="download(1)">
+                        <h5>PolarOS KDE</h5>
+                        <p class="desc">The main PolarOS, comes with everything you need. but in KDE shape.</p>
+                        <img src="../img/polaros.png" width="360" height="240" alt="polarOS">
+                    </div>
+                <div class="version" onclick="download(1)">
+                        <h5>PolarOS XFCE</h5>
+                        <p class="desc">The main PolarOS, comes with everything you need. but in XFCE shape.</p>
+                        <img src="../img/polaros.png" width="360" height="240" alt="polarOS">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/script.js"></script>
+        <%- include('./partials/footer.ejs') %>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<div class="footer">
+    <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> PolarOS project. All rights reserved</p>
+    <div class="contact">
+        <a href="https://www.patreon.com/bePatron?u=41877640"><i class="fab fa-patreon"></i></a>
+        <a href="https://fryxel.com"><i class="fas fa-server"></i></a>
+        <a href="mailto:support@polaros.xyz"><i class="fas fa-envelope"></i></a>
+    </div>
+    <a href="mailto:contact@andreimuntean.xyz" class="credits">Website's designer and front-end developer</a>
+    <div class="legal">
+        <a href="../legal/terms-of-service.pdf">Terms of service</a>
+        <a href="../legal/privacy-policy.pdf">Privacy policy</a>
+    </div>
+  <br>
+  <a href="//www.dmca.com/Protection/Status.aspx?ID=0d2b9f3f-ad9b-4a90-8bc3-3e0413f1331a" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-07.png?ID=0d2b9f3f-ad9b-4a90-8bc3-3e0413f1331a"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+</br>
+  </div>
+
+<script src="./scripts/adbdetect.packed.js"></script>
+<script>
+        var adBD = adBDetect().setup({
+            debug: true,
+            setPage: '/ad-detect',
+            wait: 0,
+        });
+        adBD.start();
+        if (adBD.isDetected()) {
+
+        }
+</script>
+<script src="./scripts/loader.js"></script>
+<script>
+    if(userPrefersDark){
+        link.href = './img/logo-light.png';
+    } else if(userPrefersLight) {
+        link.href = './img/logo-dark.png';
+    }
+
+    ScrollReveal().reveal('.wrapper');
+</script>
+<script src="./scripts/darkMode.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5Z4YHX5K0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T5Z4YHX5K0');
+</script>
